@@ -1,5 +1,19 @@
 <RCC>
     <qresource prefix="/QML">
         <file>qml/main.qml</file>
+        <file>qml/authentication_section/AuthenticationSection.qml</file>
+        <file>qml/authentication_section/TextFieldAuthentication.qml</file>
+        <file>qml/authentication_section/ButtonAuthentication.qml</file>
+        <file>qml/authentication_section/areas/LoginArea.qml</file>
+        <file>qml/authentication_section/areas/RegistrationArea.qml</file>
+        <file>qml/authentication_section/areas/RightArea.qml</file>
+        <file>qml/authentication_section/ErrorHandler.qml</file>
+        <file>qml/authentication_section/qmldir</file>
+    </qresource>
+    <qresource prefix="/IMAGES">
+        <file>images/authentication_section/right_area/group.svg</file>
+        <file>images/authentication_section/right_area/padlock.svg</file>
+        <file>images/authentication_section/hided_password.svg</file>
+        <file>images/authentication_section/show_password.svg</file>
     </qresource>
 </RCC>
