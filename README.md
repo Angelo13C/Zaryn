@@ -1,2 +1,2 @@
 # Zaryn
-Social network base on Mazaryn
+Instant messaging application based on Mazaryn
