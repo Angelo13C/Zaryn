@@ -25,12 +25,12 @@ Item {
 
                 LoginArea    //LoginArea
                 {
-
+                    onRegistration: _dullingAnimationID.start()
                 }
 
                 RegistrationArea    //RegistrationArea
                 {
-
+                    onLogin: _dullingAnimationID.start()
                 }
 
 

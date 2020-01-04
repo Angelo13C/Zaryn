@@ -50,7 +50,7 @@ ColumnLayout
                     /[A-Za-z0-9@_!#$%&'*+-/=?^_`{|}~]{6,50}/
                 ]
 
-                regularExpression: _validators[_type]
+                regularExpression: _validators[_type === 0 ? 0 : 1]
             }
         }
 
@@ -69,7 +69,7 @@ ColumnLayout
             ]
 
             source:     //Load only if it is a password field
-                if(_type === 1)
+                if(_type !== 0)
                     _path[_showingPassword ? 1 : 0]
                 else
                     ""
@@ -95,6 +95,8 @@ ColumnLayout
         id: _errorTextID
 
         font.pointSize: 12
+        Layout.preferredWidth: _textFieldID.width
+        elide: Text.ElideRight
 
         color: "#d41313"
     }
